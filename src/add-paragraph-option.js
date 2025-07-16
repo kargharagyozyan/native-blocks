@@ -36,7 +36,6 @@ const ParagraphMenuAddon = () => {
 					}}
 				>
 					Select all
-					<span style={{ marginLeft: 8 }}>⌘A</span>
 				</MenuItem>
 			)}
 		</BlockSettingsMenuControls>
