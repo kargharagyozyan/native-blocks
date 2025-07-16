@@ -35,7 +35,7 @@ const ParagraphMenuAddon = () => {
 						onClickSelectAll(onClose);
 					}}
 				>
-					Select alle
+					Select all
 				</MenuItem>
 			)}
 		</BlockSettingsMenuControls>
