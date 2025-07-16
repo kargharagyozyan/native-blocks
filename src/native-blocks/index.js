@@ -13,9 +13,9 @@ import { registerBlockType } from '@wordpress/blocks';
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
 import './style.scss';
-import '../extend-toolbar.js'
-import '../titleMetaPanel'
-import '../add-paragraph-option'
+import '../gutenberg/extend-toolbar.js'
+import '../gutenberg/titleMetaPanel'
+import '../gutenberg/add-paragraph-option'
 /**
  * Internal dependencies
  */
