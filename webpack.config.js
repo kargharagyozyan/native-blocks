@@ -18,7 +18,7 @@ module.exports = {
 	output: {
 		...defaultConfig.output,
 		path: path.resolve(__dirname, 'build'),
-		filename: '[name].js', // Retains folder structure in output
-		clean: true, // Clears old files before build
+		filename: '[name].js',
+		clean: true,
 	},
 };
