@@ -27,24 +27,6 @@ function native_blocks_init() {
 		foreach ( array_keys( $manifest_data ) as $block_type ) {
 			register_block_type( __DIR__ . "/build/custom-blocks/{$block_type}" );
 		}
-	} else {
-		register_block_type( __DIR__ . '/build/custom-blocks/rating-block' );
-		register_block_type( __DIR__ . '/build/custom-blocks/review-card-block' );
-		register_block_type( __DIR__ . '/build/custom-blocks/rating-block-new' );
 	}
 }
 add_action( 'init', 'native_blocks_init' );
-
-function native_blocks_enqueue_editor_assets() {
-	$gutenberg_js_path = __DIR__ . '/build/gutenberg/index.js';
-	if ( file_exists( $gutenberg_js_path ) ) {
-		wp_enqueue_script(
-			'native-blocks-gutenberg',
-			plugins_url( 'build/gutenberg/index.js', __FILE__ ),
-			[ 'wp-blocks', 'wp-element', 'wp-editor' ], // Adjust dependencies as needed
-			filemtime( $gutenberg_js_path ),
-			true
-		);
-	}
-}
-add_action( 'enqueue_block_editor_assets', 'native_blocks_enqueue_editor_assets' );
