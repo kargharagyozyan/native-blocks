@@ -48,5 +48,5 @@ addFilter(
 );
 
 registerPlugin('native-blocks-paragraph-toolbar', {
-	render: () => withNativeToolbarButton,
+	render: withNativeToolbarButton,
 });
